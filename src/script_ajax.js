@@ -6,6 +6,14 @@ function defineDefaultDays() {
     document.getElementById('days').value = 1;
 }
 
+function startProcess() {
+    if (getLocationValue() == null || getLocationValue() == '') {
+        alert('Favor informar uma localidade.');
+    } else {
+        buildCard();
+    }
+}
+
 async function buildCard() {
     validateDaysField();
     const weatherData = await getWeatherData();
@@ -102,9 +110,7 @@ function getDays() {
 }
 
 function getLocationValue() {
-    const local = document.getElementById('local').value;
-    return local;
-    
+    return document.getElementById('local').value;
 }
 
-document.getElementById('enviar').addEventListener('click', buildCard);
+document.getElementById('enviar').addEventListener('click', startProcess);
