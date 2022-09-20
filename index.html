@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get My Weather</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <header>
+        <section class="formulario" onload="defineDefaultDays()">
+            <h1 id="title">Get My Weather</h1>
+            <p>Para comerçarmos, informe o CEP ou nome da localidade que você dejesa ser
+                atualizado e a quantidade de dias que deseja ver a previsão.</p>
+            <div class="form-input">
+                <div>
+                    <label>CEP / Cidade</label>
+                    <input id="local" class="input" />
+                </div>
+                <div>
+                    <label>Dias</label>
+                    <input id="days" class="input input-days" type="number" />
+                </div>
+            </div>
+            <button id="enviar">Mostre-me</button>
+        </section>
+
+    </header>
+
+    <main>
+        <div class="cards-group-title">
+            <h1 id="localidade"></h1>
+        </div>
+
+        <div class="cards"></div>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script src="script_ajax.js" defer></script>
+</body>
+
+</html>

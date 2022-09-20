@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand';
+}
+
+body {
+    background: lightcyan;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    display: block;
+    background-color: #ccc;
+    border-color: black;
+    height: 35px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.form-input {
+    display: flex;
+    margin-top: 20px;
+    width: 200px;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.input-days {
+    width: 50px;
+    margin-left: 10px;
+}
+
+button {
+    border-radius: 40px;
+    font-size: 1.2rem;
+    height: 60px;
+    width: 150px;
+    border: none;
+    background-color: #4e545c;
+    color: #e5e8e8;
+    transition: açç 0.7s linear;
+    margin-top: 2rem;
+    outline-style: none;
+}
+
+button:hover {
+    background-color: #000401;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.cards-group-title {
+    text-align: center;
+}
+
+.cards-panel, .cards-panel-1, .cards-panel-2 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+}
+
+.card-img-top {
+    height: 100px;
+    width: 100px;
+}
+    
