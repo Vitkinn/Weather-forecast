@@ -76,7 +76,7 @@ function addCardInfo() {
 }
 
 async function getWeatherData() {
-    const url = `http://api.weatherapi.com/v1/forecast.json?key=46e4b01ffab8436588822553221509&q=${await getLocation()}&days=${await getDays()}`;
+    const url = `http://api.weatherapi.com/v1/forecast.json?key=/*<YOUR_API_KEY>*/&q=${await getLocation()}&days=${await getDays()}`;
 
     const result = await fetch(url);
     if (result.status == 400) {
